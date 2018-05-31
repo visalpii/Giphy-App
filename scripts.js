@@ -5,7 +5,7 @@ submitButton.addEventListener('click', function(evt){
 	evt.preventDefault();
 	let searchCriteria = document.querySelector('input[type="text"]').value;
 
-	let giphyAPI = "http://api.giphy.com/v1/gifs/search";				//Giphy API url
+	let giphyAPI = "https://api.giphy.com/v1/gifs/search";				//Giphy API url
 
 	let giphyOptions = {												//using the giphy api web page for reference, send in the required parameters			
 		api_key: "qw3kjktYq1PdxFUtuBQPDtYci7mGudFy",
