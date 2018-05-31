@@ -34,5 +34,4 @@ submitButton.addEventListener('click', function(evt){
 	$.getJSON(giphyAPI, giphyOptions, displayPhotos);					//ajax call using jquery's getJSON method
 
 	console.log("You searched giphy for: " + searchCriteria);
-	console.log("Giphy loaded " ++ "results.");
 });
