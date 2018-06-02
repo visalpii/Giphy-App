@@ -52,7 +52,10 @@ table {
 
 
 
-
+.results {
+	font-size: 0;				/*to remove inexplicable white space between elements*/
+	margin-top: 20px;
+}
 
 .results > img {
 	display: inline-block;
