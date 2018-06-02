@@ -18,7 +18,7 @@ submitButton.addEventListener('click', function(evt){
 		let imgURLs = [];												//Create empty array for image urls from API
 
 		for(let i=0; i<response.data.length; i++){						//Iterate through all image urls from API and add to empty array
-			let imgURL = response.data[i].images.fixed_height_small.url;
+			let imgURL = response.data[i].images.fixed_width.url;
 			imgURLs.push(imgURL);
 		}
 
