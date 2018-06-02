@@ -18,7 +18,7 @@ submitButton.addEventListener('click', function(evt){
 		let imgURLs = [];												//Create empty array for image urls from API
 
 		for(let i=0; i<response.data.length; i++){						//Iterate through all image urls from API and add to empty array
-			let imgURL = response.data[i].images.fixed_height_small.url;
+			let imgURL = response.data[i].images.downsized_small.url;
 			imgURLs.push(imgURL);
 		}
 
@@ -29,6 +29,7 @@ submitButton.addEventListener('click', function(evt){
 		}
 		
 		resultsSection.innerHTML = resultsHTML;							//Finally add the resultsHTML string to the Section element
+		console.log(response);
 	};
 
 	$.getJSON(giphyAPI, giphyOptions, displayPhotos);					//ajax call using jquery's getJSON method
